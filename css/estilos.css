@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Nunito', sans-serif;
+}
+
+#distincion {
+  background-color: #fff;
+}
+
+#distincion #imagenLogo {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 5s;
+          animation-iteration-count: 5s;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #distincion #fotos #containerFotos {
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#distincion #contenido #items {
+  background: radial-gradient(#ccc, #000);
+  color: #fff;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+}
+
+#footer #datos {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #footer #datos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#horarioLugar {
+  color: #fff;
+}
+
+#reserva #reservaMixin {
+  color: #fff;
+  font-family: 'Prompt', sans-serif;
+  background-color: #000;
+}
+
+#reserva #reservaMixin:hover {
+  color: #680368;
+}
+
+#card #cardTrabajos {
+  color: #000;
+  font-family: 'Prompt', sans-serif;
+  background-color: #fff;
+}
+
+#card #cardTrabajos:hover {
+  color: #680368;
+}
+
+#imagenCuatro, #imagenCinco, #imagenSeis {
+  opacity: .7;
+}
+
+#tituloUno, #tituloDos, #tituloTres, #tituloCuatro, #tituloCinco {
+  font-family: 'Koulen', cursive;
+  color: #000;
+  -webkit-text-stroke: 1px white;
+  color: black;
+  text-shadow: black 2px 5px;
+}
+
+#imagenUno, #imagenDos, #imagenTres {
+  margin: 20px;
+  border: 5px solid #eee;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#imagenUno:hover, #imagenDos:hover, #imagenTres:hover {
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+}
+/*# sourceMappingURL=estilos.css.map */

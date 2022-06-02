@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+	font-family: 'Nunito', sans-serif;
+}
+
+#distincion{
+    background-color: #fff;
+    #imagenLogo{
+        animation-duration: 1.2s;
+        animation-name: aparecer;
+        animation-iteration-count: 5s;
+        @keyframes aparecer{
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+    #fotos{
+        #containerFotos{
+            @include tamaño(medium){
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }   
+        }
+        
+    }    
+    #contenido{
+        #items{
+            background: radial-gradient(#ccc, #000);
+            color: #fff;
+        }
+    }
+}
+
+#tituloUno{
+    @extend %titulos;
+}
+
+#tituloDos{
+    @extend %titulos;
+}
+
+#tituloTres{
+    @extend %titulos;
+}
+
+#tituloCuatro{
+    @extend %titulos;
+}
+
+#tituloCinco{
+    @extend %titulos;
+}
+
+#imagenCuatro{
+    @extend %header;
+}
+
+#imagenCinco{
+    @extend %header;
+}
+
+#imagenSeis{
+    @extend %header;
+}
+
+
+#imagenUno{
+    @extend %fotos;
+}
+
+#imagenDos{
+    @extend %fotos;
+}
+
+#imagenTres{
+    @extend %fotos;
+}
+
+#footer{
+    background-color: #000;
+	color: #fff;
+    #datos{
+        color: #fff;
+        @include tamaño(medium){
+            flex-direction: column;
+        }
+    }
+}
+
+#horarioLugar{
+    color: (#fff);
+}
+
+
+#reserva{
+    #reservaMixin{
+        @include link (#fff, #000);
+    }
+}
+
+#card{
+    #cardTrabajos{
+        @include link (#000, #fff);
+    }
+}
+
+
+
+
